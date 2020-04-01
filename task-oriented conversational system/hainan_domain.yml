@@ -1,0 +1,64 @@
+slots:
+  spot_name:
+    type: text
+  spot_name_1:
+    type: text
+  spot_name_2:
+    type: text
+  budget:
+    type: text
+  trip_type:
+    type: text
+  activity:
+    type: text
+  days:
+    type: text
+  trip_title:
+    type: text
+
+
+
+intents:
+  - saygoodbye
+  - greet
+  - search_byactivity
+  - search_bytype
+  - search_route
+  - search_bytitle
+  - search_bybudget
+  
+
+entities:
+  - spot_name
+  - spot_name_1
+  - spot_name_2
+  - budget
+  - trip_type
+  - activity
+  - days
+  - trip_title
+
+templates:
+  utter_greet:
+    - "您好，我是旅游小助手源源。"
+    - "您好，您有什么问题吗？"
+    - "您好，您需要什么帮助吗？"
+    - "你好呀，叫我有什么事吗?"
+  utter_goodbye:
+    - "再见，希望能再次见到你"
+    - "Bye， 下次再见"
+    - "再见，我会想你的"
+    - "很高兴为您服务"
+    - "很高兴能帮到你"
+  utter_thanks:
+    - "不用谢，很高兴为您服务"
+    - "我应该做的"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - user_action.ActionSearchbyactivity
+  - user_action.ActionSearchbytype
+  - user_action.ActionSearchRoute
+  - user_action.ActionSearchbytitle
+  - user_action.ActionSearchbybudget
