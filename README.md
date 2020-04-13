@@ -1,6 +1,9 @@
 # Event-centric Tourism Knowledge Graph
 This project is mainly the application of ETKG in Hainan. ETKGCN is the Framework of our POI recommendation system and the task-oriented conversational is the QA system based on Rasa. Due to space constraints, we cannot upload the complete knowledge Graph, we will introduce ETKG here simply.
 
+Traditional tourism knowledge Graph a knowledge base which focuses on the static facts about entities, such as hotels, attractions, while ignoring events or activities of tourists' trips and temporal relations.
+![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig10.png)
+
 ETKG has following characteristics:
 1. The graph is centered on the activities that tourists have participated in during the trips and regard uses tourists' trajectories as carriers. Therefore, we can solve users' questions about activities and routes during the trip.
 2. The graph supports W3C standard(RDF, SPARKQL).
@@ -20,4 +23,4 @@ We can get some transfer relationship is as follows(reveal Spatiotemporal relati
 We give the QA framework as follow, and the code is in task-oriented conversational.
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig7.png)
 
-Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data. 
+Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data.
