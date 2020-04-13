@@ -15,6 +15,7 @@ One tourist's journey is represented in the ETKG as follows.
 Here is a use case when a tourist ask for a good place for diving.
 
 Question: Could you recommend suitable places for diving?
+
 SPARQL: SELECT ?location WHERE {?e rdf:type:Event. ?e :hasActivity "diving". ?e :hasLocation ?location}.
 
 We can get some transfer relationship is as follows(reveal Spatiotemporal relationship).
