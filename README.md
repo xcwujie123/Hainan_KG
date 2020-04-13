@@ -14,11 +14,20 @@ One tourist's journey is represented in the ETKG as follows.
 
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig5.png)
 
-Here is a use case when a tourist ask for a good place for diving.
+Here are some use cases:
+
+1.when a tourist ask for a good place for diving.
 
 Question: Could you recommend suitable places for diving?
 
 SPARQL: SELECT ?location WHERE {?e rdf:type:Event. ?e :hasActivity "diving". ?e :hasLocation ?location}.
+
+2.when a tourist want to ask for a route:
+
+Qusetion:I plan to go to Hainan for a 7-day road trip with my parents. Can you recommend a route for me?
+
+SPARQL:SELECT ?Journey WHERE {?Journey rdf:type: Journey. ?Journey :hasCompainon “parents“. ?Journey :hasDuration "7”. ?Journey :TravelType "self drving".} 
+
 
 We can get some transfer relationship is as follows(reveal Spatiotemporal relationship).
 
@@ -28,7 +37,7 @@ We give the QA framework as follow, and the code is in task-oriented conversatio
 
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig7.png)
 
-Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data. Two kinds of KG is stored in directory /Hainan_KG/data.
+Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data. Two kinds of KG is stored in directory /Hainan_KG/data. (Because of the limitation of space, we can only give some examples).
 
 /Hainan_KG/data/interaction.txt  ---- POI visit records of Hainan in 2015
 
