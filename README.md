@@ -28,4 +28,10 @@ We give the QA framework as follow, and the code is in task-oriented conversatio
 
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig7.png)
 
-Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data.
+Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data. Two kinds of KG is stored in directory /Hainan_KG/data.
+
+/Hainan_KG/data/interaction.txt  ---- POI visit records of Hainan in 2015
+
+/Hainan_KG/data/KG.txt  ---- Traditional tourism knowledge Graph of Hainan
+
+/Hainan_KG/data/ETKG.txt ---- ETKG of Hainan
