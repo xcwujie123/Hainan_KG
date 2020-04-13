@@ -46,4 +46,4 @@ Recommendation system framework's code is in ETKGCN. Due to space constraints we
 
 Our Framework ETKGCN's code is in /Hainan_KG/ETKGCN while the baselines' code in /Hainan_KG/baseline.
 
-![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig12.png)
+![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig12.PNG)
