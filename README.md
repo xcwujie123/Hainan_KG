@@ -10,9 +10,17 @@ ETKG has following characteristics:
 2. The graph supports W3C standard(RDF, SPARKQL).
 3. In practice, not only can the graph be used to search for the answers of tourists’ question directly (QA), but it help us to summarize knowledge at a deeper level. The information can be used as a prior knowledge when we analyze the behavior of tourists (RS). Here we show the application of these two levels in Hainan (Question answering system and Recommender system).
 
+We can get some transfer relationship is as follows(reveal Spatiotemporal relationship).
+
+![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig6.png)
+
 One tourist's journey is represented in the ETKG as follows.
 
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig5.png)
+
+We give the QA framework as follow (based on Rasa), and the code is in /Hainan_KG/task-oriented conversational.
+
+![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig7.png)
 
 Here are some use cases:
 
@@ -28,15 +36,6 @@ Qusetion:I plan to go to Hainan for a 7-day road trip with my parents. Can you r
 
 SPARQL:SELECT ?Journey WHERE {?Journey rdf:type: Journey. ?Journey :hasCompainon “parents“. ?Journey :hasDuration "7”. ?Journey :TravelType "self drving".} 
 
-
-We can get some transfer relationship is as follows(reveal Spatiotemporal relationship).
-
-![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig6.png)
-
-We give the QA framework as follow, and the code is in task-oriented conversational.
-
-![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig7.png)
-
 Recommendation system framework's code is in ETKGCN. Due to space constraints we give partial data. Two kinds of KG is stored in directory /Hainan_KG/data. (Because of the limitation of space, we can only give some examples).
 
 /Hainan_KG/data/interaction.txt  ---- POI visit records of Hainan in 2015
@@ -44,3 +43,7 @@ Recommendation system framework's code is in ETKGCN. Due to space constraints we
 /Hainan_KG/data/KG.txt  ---- Traditional tourism knowledge Graph of Hainan
 
 /Hainan_KG/data/ETKG.txt ---- ETKG of Hainan
+
+Our Framework ETKGCN's code is in /Hainan_KG/ETKGCN while the baselines' code in /Hainan_KG/baseline.
+
+![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig12.png)
