@@ -28,6 +28,8 @@ Recommendation system framework's code is in ETKGCN. Due to space constraints we
 
 /Hainan_KG/data/ETKG.txt ---- ETKG of Hainan
 
+/Hainan_KG/data/weight.npy ---- prior knowledge (knowledge matrix *T* in paper) of framework ETKGCN
+
 Our Framework ETKGCN's code is in /Hainan_KG/ETKGCN while the baselines' code in /Hainan_KG/baseline.
 
 ![image](https://github.com/xcwujie123/Hainan_KG/blob/master/fig12.PNG)
@@ -41,12 +43,12 @@ Here are some use cases:
 
 1.when a tourist ask for a good place for diving.
 
-Question: Could you recommend suitable places for diving?
+**Question**: Could you recommend suitable places for diving?
 
-SPARQL: SELECT ?location WHERE {?e rdf:type:Event. ?e :hasActivity "diving". ?e :hasLocation ?location}.
+**SPARQL**: SELECT ?location WHERE {?e rdf:type:Event. ?e :hasActivity "diving". ?e :hasLocation ?location}.
 
 2.when a tourist want to ask for a route:
 
-Qusetion:I plan to go to Hainan for a 7-day road trip with my parents. Can you recommend a route for me?
+**Qusetion**:I plan to go to Hainan for a 7-day road trip with my parents. Can you recommend a route for me?
 
-SPARQL:SELECT ?Journey WHERE {?Journey rdf:type: Journey. ?Journey :hasCompainon “parents“. ?Journey :hasDuration "7”. ?Journey :TravelType "self drving".} 
+**SPARQL**:SELECT ?Journey WHERE {?Journey rdf:type: Journey. ?Journey :hasCompainon “parents“. ?Journey :hasDuration "7”. ?Journey :TravelType "self drving".} 
